@@ -26,6 +26,17 @@ public class Usuario {
     public Usuario() {
     }
 
+    public Usuario(Long id, String nome, String sobreNome, String cpf, String email, String senha, BigDecimal saldo, Cargo cargo) {
+        this.id = id;
+        this.nome = nome;
+        this.sobreNome = sobreNome;
+        this.cpf = cpf;
+        this.email = email;
+        this.senha = senha;
+        this.saldo = saldo;
+        this.cargo = cargo;
+    }
+
     public String getNome() {
         return nome;
     }
