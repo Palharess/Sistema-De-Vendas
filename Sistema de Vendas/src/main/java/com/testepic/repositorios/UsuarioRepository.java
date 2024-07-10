@@ -11,4 +11,5 @@ import java.util.Optional;
 @Repository
 public interface UsuarioRepository extends CrudRepository<Usuario, Long> {
     Optional<Usuario> findUsuarioByCpf(String cpf);
+    Optional<Usuario> findUsuarioById(Long id);
 }
